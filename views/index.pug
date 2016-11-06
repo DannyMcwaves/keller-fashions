@@ -1,0 +1,28 @@
+doctype html
+html(ng-app="app")
+  head
+    title= title
+    link(rel='stylesheet', href='../css/bootstrap.min.css')
+    link(rel='stylesheet', href="../css/util.css")
+    link(rel='stylesheet', href='../css/font.css')
+    link(rel="stylesheet", href="../css/app.css")
+    link(rel="icon" href="../images/s28.png")
+    script(src="../js/angular.min.js")
+
+  body
+    div.view-container
+        ng-view.view
+
+
+    script(src="../js/jquery-2.1.4.min.js")
+    script(src="../js/tether.min.js")
+    script(src="../js/bootstrap.min.js")
+    script(src="../js/util.js")
+    script(src="../modules/angular-animate.min.js")
+    script(src="../modules/angular-resource.min.js")
+    script(src="../modules/angular-route.min.js")
+    script(src="../modules/angular-sanitize.min.js")
+    script(src="../js/index.js")
+    script(src="../directives/directive.js")
+    script(src="../controllers/controllers.js")
+    script(src="../filters/filters.js")

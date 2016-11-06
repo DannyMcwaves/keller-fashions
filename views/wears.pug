@@ -1,0 +1,7 @@
+div(ng-include="'/header'")
+
+div#wears.container-fluid
+    div.card-group(ng-repeat="rack in data")
+        card(ng-repeat="shoe in rack" src="{{'/images/wears/' + shoe.shoe}}") {{shoe.price | currency:"GHS "}}
+
+div(ng-include="'/footer'")

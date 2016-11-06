@@ -1,0 +1,159 @@
+
+*{
+	transition: all 1s;
+}
+
+.view-container {
+  position:relative;
+}
+.view-container > .view.ng-animate {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  min-height:500px;
+}
+.view.ng-enter, .view.ng-leave,{
+  transition:1s linear all;
+}
+.view.ng-enter {
+  transform:translateX(100%);
+}
+.view.ng-enter.ng-enter-active, .view.ng-leave {
+  transform:translateX(0%);
+}
+.view.ng-leave.ng-leave-active {
+  transform:translateX(-100%);
+}
+
+header{
+	transition: all 1s linear;
+	width: 100%;
+	z-index: 5;
+	background-color: white;
+}
+
+#header .navbar nav a{
+	font-family: Montserrat-Black;
+	color: darkgray;
+	transition: all 0.1s;
+	padding-bottom: 5px;
+}
+
+#header .navbar{
+	border: 1px solid darkgray;
+}
+
+#header .navbar nav a:hover{
+	padding-bottom: 5px;
+	border-bottom: 5px solid darkgray;
+	transition: all 0.1s;
+}
+
+#collapseHead{
+	background-image: url(../images/sampleOne/C.jpg);
+	background-repeat: no-repeat;
+}
+
+#collapseHead div.container h2{
+	margin-bottom: 0px;
+	font-family: Montserrat-Bold;
+}
+header button.btn{
+	border-radius: 2px !important;
+	outline: 0px;
+	font-family: Montserrat-Bold;
+	color: black !important;
+}
+header div.navbar a.text{
+	color: black !important;
+	margin-top: 1rem;
+}
+
+div.jumbotron{
+	background-color: white;
+}
+
+div.jumbotron div{
+	text-align: justify;
+}
+
+div.samples .card{
+	border: 0px;
+	outline: 0px;
+	font-family: Raleway-Black;
+	text-align: center;
+	color: blue;
+}
+
+div#wears .card {
+	border: 0px;
+	outline: 0px;
+	font-family: Raleway-Black;
+	text-align: center;
+	color: sienna;
+}
+#about .jumbotronHead{
+	font-size: 1.2em;
+	color: darkred;
+	text-align: center;
+}
+
+#footer{
+	background-color: black;
+}
+#wfooter{
+	background-color: white;
+	text-align: center;
+}
+#footer address{
+	color: white;
+	font-family: Lato-Black;
+}
+
+#wfooter address{
+	color: black;
+	font-family: Lato-Black;
+}
+
+#footer address section,
+#footer #author{
+	letter-spacing: 1px;
+}
+
+#footer address section img{
+	height: 35px;
+	width: 35px;
+}
+
+
+/*this is for the sub pages*/
+div#sampleOne .card{
+	border: 0px;
+	outline: 0px;
+}
+div#sampleOne .card .cardHead{
+	text-align:center;
+	color: cadetblue;
+	font-family: Raleway-Black;
+	padding-top: 5px;
+}
+
+div#sampleOne .card .cardBody {
+	font-family: Raleway-Black;
+	color: cadetblue;
+	text-align: center;
+}
+
+div#wears{
+/*	background-color: silver;*/
+/*	background-image: url(../images/b26.png);*/
+}
+
+@media screen and (max-width: 543px) {
+
+}
+
+@media screen and (min-width: 543px) {
+
+}

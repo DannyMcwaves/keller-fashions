@@ -1,0 +1,67 @@
+header
+
+    div.collapse#collapseHead
+
+        div.container.hidden-xs-down.text-xs-center.p-b-1
+            h2.p-t-1 KELLER'S
+            small.label.label-success.m-b-1 the new cool
+            br
+            div.p-b-2
+                a.btn.btn-sm.m-r-1.sm-font(ng-repeat="x in buttons" class="{{x.style}}" href="{{x.link}}") {{x.name}}
+
+        div.container.hidden-sm-up.text-xs-right.p-b-1
+            div.nav-pills.nav-tabs(nav)
+
+
+    div.navbar.navbar-full.navbar-light.bg-black.p-b-1(ng-controller="home")
+        a.navbar-brand.btn.btn-sm.hidden-sm-up.text.btn-warning.sm-font(href="#/") {{title}}
+        a.navbar-brand.hidden-xs-down
+            img(src="/images/s28.png" height="50px" width="90px")
+        button.btn.btn-sm.m-t-1.pull-xs-right(data-toggle="collapse" data-target="#collapseHead")
+            | &#9776;
+
+
+div
+    jumbotron(head="{{title}}")
+        |Welcome to my fashion store for shoes and all the footwear you might ever need.
+        |Are you tired of the many marketing hypes out there about shoes with ridiculously high
+        |prices? Are you looking for a cool place to get all the kind of shoes you want for an
+        |even lesser price? Then look no further. Were you waiting for this opportunity? Then the
+        |wait is over my friend, because I am here to make all that possible with just the click of
+        |a button. Do you need a shoe right at your door step by just placing a phone call? Any
+        |shoe, of any type or design or brand and for any occasion, is available right here at
+        |keller's fashions.
+
+div.card-group.samples
+    card.text-xs-center(src="/images/sampleOne/C_.jpg" head="Shoe samples")
+        img(ng-src="/images/sampleOne/C.jpg" height="150px" width="150px")
+        br
+        | Puma Redis.
+    card.text-xs-center(src="/images/sampleOne/blue.png" head="Blue adidas")
+    card.text-xs-center(src="/images/sampleOne/s32.jpg" head="Girly")
+
+
+div.text-xs-right.p-r-2.p-b-2
+    a.btn.btn-primary.btn-sm.sm-font(href="#/samples/sampleOne") more samples
+
+div.container-fluid#wears.p-t-3.p-b-3
+    div.card-group.m-t-2
+        card(src="/images/other/pple7.jpg" head="kids shoes")
+        card(src="/images/other/pple9.jpg" head="sample One")
+        card(src="/images/other/pple8.jpg" head="Other samples")
+
+div.text-xs-center.p-r-2.p-b-3.m-t-3
+    a.btn.btn-danger.btn-sm.sm-font(href="#/samples/wears") more samples
+
+div#about
+    jumbotron(head="WHAT WE DO")
+        | Keller Fashions is just a simple e-commerce store that is using the power offered by the internet
+        | and it's
+        | sibling technologies to help you get easy access to all the good shoes you need for any occasion.
+        | Currently we have a few employees who serve the greater-Accra region and are able to travel to your
+        | doorstep or any appointed place to deliver you the shoes. Or you can visit our store at the address
+        | below.
+        | contact us for all shoe catalogs. Follow us on instagram to see more shoe samples or like our products
+        | on facebook.
+
+div(ng-include="'/footer'")

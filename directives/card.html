@@ -1,0 +1,9 @@
+<div class="card">
+	<header ng-show='boolheader' class="card-header cardHeader">{{header}}</header>
+	<div class="card-block cardBlock">
+		<img ng-src="{{src}}" ng-show="boolimage" class="img-top img-fluid" />
+		<h2 class="card-title lg-font cardHead">{{head}}</h2>
+		<div class="card-text cardBody" ng-transclude></div>
+	</div>
+	<footer ng-show="boolfooter" class="card-footer cardFooter">{{footer}}</footer>
+</div>

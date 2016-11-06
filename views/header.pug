@@ -1,0 +1,18 @@
+header#header.m-b-2
+
+    div#collapseHead
+
+        div.container.text-xs-center.p-b-1
+            h2.p-t-1 KELLER'S
+            small.label.label-success.m-b-1 the new cool
+            br
+            div.p-b-2.hidden-xs-down
+                a.btn.btn-sm.m-r-1.sm-font(ng-repeat="x in buttons" class="{{x.style}}" href="{{x.link}}") {{x.name}}
+
+    div.navbar.navbar-full.navbar-light.bg-faded.p-b-2(ng-controller="home")
+        nav.nav.nav-inline.text-xs-center.m-t-2
+            a.nav-link.p-r-1(href="#/") HOME
+            a.nav-link.p-r-1(href="#/samples/sampleOne") SAMPLE ONE
+            a.nav-link.p-r-1(href="#/samples/sampleTwo") SAMPLE TWO
+            a.nav-link.p-r-1(href="#/samples/sampleThree") SAMPLE THREE
+            a.nav-link.p-r-1(href="#/samples/wears") WEARS

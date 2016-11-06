@@ -1,0 +1,36 @@
+{
+  "name": "meanSeed",
+  "version": "0.0.1",
+  "description": "This is just a blue print for my mean stack applications.",
+  "private": "true",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "compression": "*",
+    "connect-busboy": "*",
+    "cookie-parser": "*",
+    "csurf": "*",
+    "errorhandler": "*",
+    "express": "*",
+    "express-session": "^1.14.1",
+    "method-override": "*",
+    "mongoose": "*",
+    "mongoskin": "*",
+    "morgan": "*",
+    "pug": "*",
+    "serve-favicon": "^2.3.0",
+    "serve-index": "^1.8.0",
+    "session": "*",
+    "static-favicon": "*"
+  },
+  "author": "dannyMcwaves",
+  "email": "dannymcwaves96@gmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DannyMcwaves/mean_seed.git"
+  }
+}
